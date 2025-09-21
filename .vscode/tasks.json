@@ -5,7 +5,7 @@
       "label": "build current cpp",
       "type": "shell",
       "command": "/usr/bin/clang++",
-      "args": ["-std=c++17","-g","${relativeFile}","-o","${fileDirname}/${fileBasenameNoExtension}"],
+      "args": ["-std=c++17","-g","${relativeFile}","-o","${fileDirname}/${fileBasenameNoExtension}", "/permissive-"],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": ["$gcc"]
     }
