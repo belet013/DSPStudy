@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C++ (lldb, integrated terminal)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "cwd": "${fileDirname}",
+      "args": [],
+      "preLaunchTask": "build current cpp",
+      "terminal": "integrated"      // CodeLLDB shows I/O in VS Code Terminal
+    }
+  ]
+}

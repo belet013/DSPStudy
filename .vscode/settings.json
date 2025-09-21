@@ -1,0 +1,6 @@
+{
+  "code-runner.executorMap": {
+    "cpp": "/usr/bin/clang++ -std=c++17 ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
+  },
+  "code-runner.runInTerminal": true
+}
