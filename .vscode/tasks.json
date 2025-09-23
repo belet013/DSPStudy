@@ -2,10 +2,18 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build current cpp",
+      "label": "build current cpp (c++23, macports)",
       "type": "shell",
-      "command": "/usr/bin/clang++",
-      "args": ["-std=c++17","-g","${relativeFile}","-o","${fileDirname}/${fileBasenameNoExtension}", "/permissive-"],
+      "command": "/opt/local/bin/clang++-mp-18",
+      "args": [
+        "-std=c++23",
+        "-stdlib=libc++",
+        "-g",
+        "${relativeFile}",
+        "-o", "${fileDirname}/${fileBasenameNoExtension}",
+        "-Wall", "-Wextra", "-Wpedantic",
+        "-Werror"
+      ],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": ["$gcc"]
     }
