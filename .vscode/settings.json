@@ -1,6 +1,7 @@
 {
   "code-runner.executorMap": {
-    "cpp": "/usr/bin/clang++ -std=c++23 ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
+    "cpp": "/usr/bin/clang++ -std=c++20 ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
   },
-  "code-runner.runInTerminal": true
+  "code-runner.runInTerminal": true,
+  "C_Cpp.default.cppStandard": "c++20"
 }

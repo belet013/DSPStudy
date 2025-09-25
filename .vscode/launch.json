@@ -2,14 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C++ (lldb, integrated terminal)",
-      "type": "lldb",
+      "name": "Run main (lldb, integrated terminal)",
+      "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "cwd": "${fileDirname}",
+      "MIMode": "lldb",
+      "program": "${workspaceFolder}/CPlusPlusProjectss/Lesson1.1/main",
       "args": [],
-      "preLaunchTask": "build current cpp",
-      "terminal": "integrated"      // CodeLLDB shows I/O in VS Code Terminal
+      "cwd": "${workspaceFolder}/CPlusPlusProjectss/Lesson1.1",
+      "externalConsole": false,
+      "stopAtEntry": false
     }
   ]
 }
