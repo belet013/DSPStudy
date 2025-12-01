@@ -2,15 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run main (lldb, integrated terminal)",
+      "name": "Debug current folder (lldb)",
       "type": "cppdbg",
       "request": "launch",
       "MIMode": "lldb",
-      "program": "${workspaceFolder}/CPlusPlusProjectss/Lesson1.1/main",
+      "program": "${fileDirname}/main",
+      "cwd": "${fileDirname}",
       "args": [],
-      "cwd": "${workspaceFolder}/CPlusPlusProjectss/Lesson1.1",
-      "externalConsole": false,
-      "stopAtEntry": false
+      "externalConsole": true,
+      "stopAtEntry": false,
+      "preLaunchTask": "Build (clang++) current folder"
     }
   ]
 }

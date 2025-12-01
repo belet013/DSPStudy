@@ -1,0 +1,1 @@
+meta.tofile('qpsk_in_noise.sigmf-meta') # Extension is optional

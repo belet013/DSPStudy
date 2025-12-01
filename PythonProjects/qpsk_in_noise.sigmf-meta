@@ -1,0 +1,19 @@
+{
+    "global": {
+        "core:author": "Your name and/or email",
+        "core:datatype": "cf32_le",
+        "core:description": "Simulation of qpsk with noise",
+        "core:num_channels": 1,
+        "core:sample_rate": 8000000,
+        "core:sha512": "13877270a18d13458c14f1d93934c3461aac1b2653af2bb62e0ca6a8374b5454b105529995894827803475665525de20ad34ae51bd13b0c05b82ef1777e7cfca",
+        "core:version": "1.2.12"
+    },
+    "captures": [
+        {
+            "core:datetime": "2025-12-01T02:51:34.770150+00:00",
+            "core:frequency": 915000000,
+            "core:sample_start": 0
+        }
+    ],
+    "annotations": []
+}

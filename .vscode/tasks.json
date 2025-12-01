@@ -2,18 +2,21 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "C/C++: clang++ build all",
+      "label": "Build (clang++) current folder",
       "type": "shell",
-      "command": "/usr/bin/clang++",
+      "command": "bash",
       "args": [
-        "-std=gnu++14",
-        "-g",
-        "${fileDirname}/*.cpp",
-        "-o",
-        "${fileDirname}/main"
+        "-lc",
+        "clang++ -std=gnu++14 -g *.cpp -o main"
       ],
-      "group": "build",
-      "problemMatcher": ["$gcc"]
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
